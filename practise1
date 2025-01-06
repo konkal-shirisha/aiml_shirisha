@@ -1,0 +1,159 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "bcc56edf-fe1e-40d0-bd15-274208331b7f",
+   "metadata": {},
+   "source": [
+    "scores = {\"virat:90\",\"Rohit:100\",\"gill:20\",\"jadeja:30\",\"Rahul:70\",\"Siraj:15\"}\n",
+    "print(scores)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "d7a5b0fd-a9cf-47c9-95f0-01c5cad1a7db",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Rahul:70',\n",
+       " 'Rohit:100',\n",
+       " 'Siraj:15',\n",
+       " 'aswin:15',\n",
+       " 'gill:20',\n",
+       " 'jadeja:30',\n",
+       " 'virat:90'}"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.update({\"aswin:15\"})\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "5c423073-c378-4477-8fc9-19a259c239aa",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Rohit:100', 'aswin:15', 'gill:20', 'jadeja:30'}"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.pop()\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "8871ea74-f2e9-4118-8d30-20e814cc63e8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Rohit:100', 'aswin:15', 'gill:20', 'hardik:40', 'jadeja:30'}"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.update({\"hardik:40\"})\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "56ce2163-2ffb-440b-8512-a231e8da5208",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': None, 'B': None, 'C': None, 'D': None}"
+      ]
+     },
+     "execution_count": 79,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 = [\"A\",\"B\",\"C\",\"D\"]\n",
+    "my_dict =dict.fromkeys(list1)\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "13bea5f7-7f92-41da-ae04-b9ce8b86ac73",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': 20, 'B': 20, 'C': 20, 'D': 20}"
+      ]
+     },
+     "execution_count": 89,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict =dict.fromkeys(list1,20)\n",
+    "my_dict\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd90d321-8828-472f-97a3-c36db431c08a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:anaconda3-New folder]",
+   "language": "python",
+   "name": "conda-env-anaconda3-New_folder-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
