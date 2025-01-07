@@ -1,0 +1,469 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "022b72c4-7c71-4696-bd51-9f1df62619be",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 2, 3, 6, 8, 9, 10}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 ={1,8,9,0,10,3,2,6,8,9}\n",
+    "print(s1)\n",
+    "print(type(s1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "570bef3e-c496-4533-8693-50ed99441018",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lst1 = [1,8,9,0,10,20,78,8,8,8]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "fff5dade-41f0-476b-9791-e3fbd819dd94",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{0, 1, 8, 9, 10, 78, 20}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s2 = set(lst1)\n",
+    "print(s2)\n",
+    "print(type(s2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "44a90c83-2ff3-4221-853c-10f1082419bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6}"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#union operTION USING  | OPERATOR\n",
+    "s1 = {1,2,3,4}\n",
+    "s2 = {3,4,5,6}\n",
+    "s1 | s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "cbfefca2-393e-4d2c-9e18-2176c06aef12",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6}"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.union(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "d3c0c4a2-0e71-4728-a12d-26db86b88b30",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{3, 4}"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Intersection using & operator\n",
+    "s1 = {1,2,3,4}\n",
+    "s2 = {3,4,5,6}\n",
+    "s1 & s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "a2da190e-7e18-4ac6-bbbf-088c79f4d9ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{3, 4}"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1.intersection(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "f368f6d4-1a9e-4cae-a709-334f5b25a08a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{2, 3}"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#difference \n",
+    "s1 ={2,3,5,6,7}\n",
+    "s2 = {5,6,7}\n",
+    "s1 - s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "6628bc55-cf23-4fd9-97d7-8e71a0fbd18c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set()"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s2 - s1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "85c0f54e-99b0-495b-8126-6f7ab356eec7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1 ={1,2,3,4,5}\n",
+    "s2 = {1,2,3}\n",
+    "s1.issubset(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "354fac98-861e-4a1b-b1e0-cd8d6629c33a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to aiml class\n",
+      "We started with python\n",
+      "This is an awesome class\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1 = \"Welcome to aiml class\"\n",
+    "print(str1)\n",
+    "str2 = 'We started with python'\n",
+    "print(str2)\n",
+    "str3 = '''This is an awesome class'''\n",
+    "print(str3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "41550b6d-09ca-415a-8648-206d346237cf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to aiml class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'me to'"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#slicing in strings\n",
+    "print(str1)\n",
+    "str1[5:10]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "0c00c406-06ad-4d85-86c3-724551d98d21",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n",
+      "<class 'str'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(str1))\n",
+    "print(type(str2))\n",
+    "print(type(str3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "e251a264-7ff2-45aa-9361-c3983c414248",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to aiml class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "['Welcome', 'to', 'aiml', 'class']"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#use of split\n",
+    "print(str1)\n",
+    "str1.split()\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "3adbd828-9c8b-403a-a526-0356721e7678",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'The product is awesome ; Great seervice'"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#use of join() method\n",
+    "reviews = [\"The product is awesome\", \"Great seervice\"]\n",
+    "joined_string = ' ; '.join(reviews)\n",
+    "joined_string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "7574ff76-1380-442a-83fc-17a72cbdfdca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'   Hello, How are you?   '"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#use of strip() method\n",
+    "str5 = \"   Hello, How are you?   \"\n",
+    "str5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "afd94740-3571-44d4-b917-bd60ed0c874d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Hello, How are you?'"
+      ]
+     },
+     "execution_count": 76,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str5.strip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "1522f5bc-8012-437c-bb5d-3fc2d94b63a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'hello,how are you?'"
+      ]
+     },
+     "execution_count": 80,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str5 = \"Hello,How are you?\"\n",
+    "str5.lower()"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "bb76a642-7b51-4a82-894f-d488118fcac9",
+   "metadata": {},
+   "source": [
+    "str5.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "200548a4-7ffd-4127-841d-2bda49cc1e76",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'HELLO,HOW ARE YOU?'"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str5.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2c72a4de-73b7-4f1e-a96a-53d94d538b35",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:anaconda3-New folder]",
+   "language": "python",
+   "name": "conda-env-anaconda3-New_folder-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
